@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+#loading-text {
+  color: whitesmoke;
+  background-color: #1e75f8;
+}
+
+.main-container {
+  background-color: gainsboro;
+  background: url("../../images/headerBg.png") no-repeat;
+  background-size: 150%;
+  background-position: top;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    background-size: 250%;
+  }
+}
+
+.main-container div.navbar {
+  padding: 2rem;
+  background-color: #1e75f8;
+}
+
+.main-container div.navbar h1 {
+  font-weight: 500;
+  font-family: "Lobster", sans-serif;
+  color: #f1f1f1;
+}
+
+.main-container header {
+  min-height: 80vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .main-container header {
+    min-height: 50vh;
+  }
+}
+
+.main-container header div.personal-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container header div.personal-details-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main-container header div.personal-details-container div.image-container {
+  padding-top: 2rem;
+}
+
+.main-container header div.personal-details-container div.image-container img {
+  width: 40vw;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container header div.personal-details-container div.image-container img {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-container header div.personal-details-container div.image-container img {
+    width: 70vw;
+  }
+}
+
+.main-container header div.personal-details-container div.personal-info-section {
+  padding: 2rem;
+}
+
+.main-container header div.personal-details-container div.personal-info-section #my-name {
+  font-size: 3rem;
+  text-align: left;
+  color: #001a3b;
+  padding-left: 0.5rem;
+}
+
+@media screen and (max-width: 450px) {
+  .main-container header div.personal-details-container div.personal-info-section #my-name {
+    font-size: 2rem;
+  }
+}
+
+.main-container header div.personal-details-container div.personal-info-section #followers {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 450px) {
+  .main-container header div.personal-details-container div.personal-info-section #followers {
+    font-size: 1.25rem;
+  }
+}
+
+.main-container header div.personal-details-container div.personal-info-section .find-me-link {
+  padding-left: 0.5rem;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 450px) {
+  .main-container header div.personal-details-container div.personal-info-section .find-me-link {
+    font-size: 1rem;
+  }
+}
+
+.main-container header div.personal-details-container div.personal-info-section .find-me-link a {
+  text-decoration: none;
+  color: #70cbff;
+}
+
+.main-container header div.personal-details-container div.personal-info-section .find-me-link a:hover {
+  color: #48a7ff;
+}
+
+.main-container section.twitter-embed {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 2rem;
+}
+
+.main-container section.github-repo-list {
+  padding-top: 2rem;
+}
+
+.main-container section.github-repo-list .repo-title {
+  padding: 2rem;
+}
+
+.main-container section.github-repo-list .repo-title h1 {
+  font-weight: 500;
+  color: #114492;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.main-container section.github-repo-list ul#repo-list {
+  padding-top: 1rem;
+  list-style-type: none;
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item a {
+  text-decoration: none;
+  color: #1e75f8;
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item a:hover {
+  color: #1551ac;
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item h3 {
+  font-weight: 400;
+  color: #4b4a4a;
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item p::before {
+  content: "Language: ";
+  font-size: smaller;
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item:hover {
+  -webkit-box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-container section.github-repo-list ul#repo-list li.list-item h1 {
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #1e75f8;
+}
+
+.main-container footer {
+  padding: 2rem;
+  background-color: #1e75f8;
+  margin-top: 2rem;
+  color: gainsboro;
+}
+/*# sourceMappingURL=main.css.map */

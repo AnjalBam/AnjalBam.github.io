@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/9904296e39.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/css/main.css" type="text/css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navbar">
+        <h1>My Portfolio</h1>
+      </div>
+      <div id="loading-text">
+        <h1>Loading...</h1>
+      </div>
+      <div id="content-wrapper">
+        <header>
+          <div class="personal-details-container" id="body">
+            <div class="image-container">
+              <img alt="Avatar Image" id="avatar" />
+            </div>
+            <div class="personal-info-section">
+              <h1 id="my-name"></h1>
+              <h3 id="followers"></h3>
+              <p class="find-me-link">
+                Find me on <a id="github-link" target="_blank">Github</a>
+              </p>
+            </div>
+          </div>
+        </header>
+        <section class="twitter-embed">
+          <a
+            class="twitter-timeline"
+            data-width="700"
+            data-height="600"
+            data-theme="light"
+            href="https://twitter.com/AnjalBam3?ref_src=twsrc%5Etfw"
+            >Tweets by AnjalBam3</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </section>
+        <section class="github-repo-list">
+          <div class="repo-title">
+            <h1>Here's a list of some of my repos!</h1>
+          </div>
+          <ul id="repo-list"></ul>
+        </section>
+        <footer>
+          <p>Copyright &copy; 2020</p>
+        </footer>
+      </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
