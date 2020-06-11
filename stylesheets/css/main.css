@@ -122,10 +122,28 @@
   }
 }
 
+.main-container header div.personal-details-container div.personal-info-section #my-name::before {
+  content: "Hello, I am ";
+}
+
+.main-container header div.personal-details-container div.personal-info-section #bio {
+  padding: 0.5rem;
+  text-align: left;
+  color: #333;
+}
+
 .main-container header div.personal-details-container div.personal-info-section #followers {
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #e4e4e4;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container header div.personal-details-container div.personal-info-section #followers {
+    color: gray;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -147,7 +165,7 @@
 }
 
 .main-container header div.personal-details-container div.personal-info-section .find-me-link a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #70cbff;
 }
 
@@ -159,6 +177,16 @@
   margin-left: 5px;
   margin-right: 5px;
   padding-top: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .main-container section.github-repo-list {
@@ -171,9 +199,16 @@
 
 .main-container section.github-repo-list .repo-title h1 {
   font-weight: 500;
+  font-size: 2rem;
   color: #114492;
   text-decoration: underline;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container section.github-repo-list .repo-title h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .main-container section.github-repo-list ul#repo-list {
@@ -197,6 +232,12 @@
   color: #1e75f8;
 }
 
+@media screen and (max-width: 600px) {
+  .main-container section.github-repo-list ul#repo-list li.list-item a {
+    font-size: small;
+  }
+}
+
 .main-container section.github-repo-list ul#repo-list li.list-item a:hover {
   color: #1551ac;
 }
@@ -206,9 +247,21 @@
   color: #4b4a4a;
 }
 
+@media screen and (max-width: 600px) {
+  .main-container section.github-repo-list ul#repo-list li.list-item h3 {
+    font-size: 1rem;
+  }
+}
+
 .main-container section.github-repo-list ul#repo-list li.list-item p {
   font-size: 1rem;
   color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container section.github-repo-list ul#repo-list li.list-item p {
+    font-size: 0.75;
+  }
 }
 
 .main-container section.github-repo-list ul#repo-list li.list-item p::before {
@@ -225,6 +278,12 @@
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   color: #1e75f8;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container section.github-repo-list ul#repo-list li.list-item h1 {
+    font-size: 1.2rem;
+  }
 }
 
 .main-container footer {

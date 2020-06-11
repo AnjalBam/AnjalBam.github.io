@@ -3,6 +3,7 @@ let avatarImage = document.getElementById("avatar");
 let myName = document.getElementById("my-name");
 let myFollowers = document.getElementById("followers");
 let gitLinkAnchor = document.getElementById("github-link");
+let myBio = document.getElementById("bio");
 let userName = "AnjalBam";
 
 let loadingText = document.getElementById("loading-text");
@@ -83,5 +84,6 @@ const setData = (result) => {
   avatarImage.src = result.avatar_url;
   myName.innerHTML = result.name;
   myFollowers.innerHTML = `${result.followers} people follow me on GitHub`;
+  myBio.innerHTML = result.bio;
   gitLinkAnchor.href = `https://github.com/${userName}`;
 };
